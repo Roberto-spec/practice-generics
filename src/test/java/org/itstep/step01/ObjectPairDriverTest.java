@@ -2,12 +2,13 @@ package org.itstep.step01;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.itstep.step01.exeption.StadiumException;
 import org.junit.jupiter.api.Test;
 
 class ObjectPairDriverTest {
 
 	@Test
-	  public void testObjectPairDriverLargestStadiumLargestAtEnd() {
+	  public void testObjectPairDriverLargestStadiumLargestAtEnd() throws StadiumException {
 	    ObjectPair[] stadiums = new ObjectPair[3];
 	    stadiums[0] = new ObjectPair("A", 1);
 	    stadiums[1] = new ObjectPair("B", 2);
@@ -16,7 +17,7 @@ class ObjectPairDriverTest {
 	  }
 
 	  @Test
-	  public void testObjectPairDriverLargestStadiumLargestAtStart() {
+	  public void testObjectPairDriverLargestStadiumLargestAtStart() throws StadiumException {
 	    ObjectPair[] stadiums = new ObjectPair[3];
 	    stadiums[0] = new ObjectPair("A", 3);
 	    stadiums[1] = new ObjectPair("B", 2);
@@ -25,7 +26,7 @@ class ObjectPairDriverTest {
 	  }
 
 	  @Test
-	  public void testObjectPairDriverLargestStadiumLargestInMiddle() {
+	  public void testObjectPairDriverLargestStadiumLargestInMiddle() throws StadiumException {
 	    ObjectPair[] stadiums = new ObjectPair[3];
 	    stadiums[0] = new ObjectPair("A", 3);
 	    stadiums[1] = new ObjectPair("B", 1);
